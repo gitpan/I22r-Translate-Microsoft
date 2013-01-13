@@ -1,0 +1,8 @@
+Revision history for I22r-Translate-Microsoft
+
+0.92	2012-12-02
+	Use I22r::Translate logging facility
+
+0.91    2012-11-26
+	First release of I22r::Translate::Microsoft
+
