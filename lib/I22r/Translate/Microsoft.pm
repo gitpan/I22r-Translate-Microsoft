@@ -38,7 +38,7 @@ sub decode_ents {
 
 
 
-our $VERSION = '0.92';
+our $VERSION = '0.93';
 
 # TODO: apply MooseX::ClassAttribute to these variables
 our %remap = ( hm => 'nww', zh => 'zh-CHS' );
@@ -318,7 +318,7 @@ framework
 
 =head1 VERSION
 
-Version 0.92
+Version 0.93
 
 =head1 SYNOPSIS
 

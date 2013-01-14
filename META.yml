@@ -18,6 +18,14 @@ no_index:
     - t
     - inc
 requires:
-  I22r::Translate: 0
+  Encode: 0
+  HTML::Entities: 0
+  HTTP::Headers: 0
+  HTTP::Request: 0
+  I22r::Translate: 0.92
+  JSON: 0
+  LWP::UserAgent: 0
   Test::More: 0
-version: 0.92
+  URL::Encode: 0
+  XML::XPath: 0
+version: 0.93
