@@ -1,32 +1,25 @@
-use 5.006;
+use 5.010;
 use strict;
 use warnings;
-use ExtUtils::MakeMaker;
+use inc::Module::Install;
 
-WriteMakefile(
-    NAME                => 'I22r::Translate::Microsoft',
-    AUTHOR              => q{Marty O'Brien <mob@cpan.org>},
-    VERSION_FROM        => 'lib/I22r/Translate/Microsoft.pm',
-    ABSTRACT_FROM       => 'lib/I22r/Translate/Microsoft.pm',
-    ($ExtUtils::MakeMaker::VERSION >= 6.3002
-      ? ('LICENSE'=> 'perl')
-      : ()),
-    PL_FILES            => {},
-    PREREQ_PM => {
-        'Test::More' => 0,
-	'Encode' => 0,
-	'HTML::Entities' => 0,
-	'HTTP::Headers' => 0,
-	'HTTP::Request' => 0,
-	'I22r::Translate' => 0.92,
-	'JSON' => 0,
-	'LWP::UserAgent' => 0,
-	'XML::XPath' => 0,
-	'URL::Encode' => 0,
-    },
-    dist                => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
-    clean               => { FILES => 'I22r-Translate-Microsoft-*' },
-);
+name 'I22r-Translate-Microsoft';
+all_from 'lib/I22r/Translate/Microsoft.pm';
+license 'perl';
+
+requires 'Encode' => 0;
+requires 'HTML::Entities' => 0;
+requires 'HTTP::Headers' => 0;
+requires 'HTTP::Request' => 0;
+requires 'I22r::Translate' => 0.92;
+requires 'JSON' => 0;
+requires 'LWP::UserAgent' => 0;
+requires 'XML::XPath' => 0;
+requires 'URL::Encode' => 0;
+test_requires 'Test::More' => 0;
+
+auto_install;
+WriteAll;
 
 print STDERR qq[
 *******************************************************************

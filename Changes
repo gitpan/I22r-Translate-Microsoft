@@ -1,5 +1,8 @@
 Revision history for I22r-Translate-Microsoft
 
+0.94	2013-01-15
+	Rewrite Makefile.PL to use Module::Install.
+
 0.93	2013-01-12
 	Including more dependencies in  Makefile.PL . No code changes.
 

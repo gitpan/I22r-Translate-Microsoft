@@ -38,7 +38,7 @@ sub decode_ents {
 
 
 
-our $VERSION = '0.93';
+our $VERSION = '0.94';
 
 # TODO: apply MooseX::ClassAttribute to these variables
 our %remap = ( hm => 'nww', zh => 'zh-CHS' );
@@ -318,7 +318,7 @@ framework
 
 =head1 VERSION
 
-Version 0.93
+Version 0.94
 
 =head1 SYNOPSIS
 
@@ -507,7 +507,7 @@ L<I22r::Translate>
 
 =head1 LICENSE AND COPYRIGHT
 
-Copyright 2012 Marty O'Brien.
+Copyright 2012-2013 Marty O'Brien.
 
 This program is free software; you can redistribute it and/or modify it
 under the terms of either: the GNU General Public License as published
